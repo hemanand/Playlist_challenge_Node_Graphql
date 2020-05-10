@@ -8,5 +8,10 @@
     "id": "1",
     "name": "Vampire Weekend",
     "songs": "605,606,607,608,609,610"
+  },
+  {
+    "id": "2",
+    "name": "Selected time playlist",
+    "songs": "0,1,2"
   }
 ]

@@ -128,7 +128,7 @@ class About extends Component {
 	      <div className="container">
           <h1>{this.state.playlistresult}</h1>
 	      	<label>Search All Fields &nbsp;&nbsp;&nbsp;</label>
-	      	<input type="text" className="inputwidth" name="inputname" placeholder="ID / Album / Artist / Duration" onChange={this.globalsearch} /><br/>
+	      	<input type="text" className="inputwidth" name="inputname" placeholder="Search All Items" onChange={this.globalsearch} /><br/>
            <div className="row mt-5">
                 <div className="col-lg-5 mb-5 grid-margin"></div>
                 <div className="col-lg-3 mb-3 grid-margin"><input type="text" name="inputplaylistname" id="inputplaylistname"/></div>
