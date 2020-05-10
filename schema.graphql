@@ -1,9 +1,6 @@
 type Query {
    greeting:String
    
-   students:[Student]
-   studentById(id:ID!):Student 
-
    librarylist:[Librarylist]
    librarylistById(id:ID!):Librarylist
 
@@ -11,14 +8,6 @@ type Query {
    playlistsById(id:ID!):Playlist
 
    playlistsdeleteById(id: ID!): Playlist
-}
-
-type Student {
-   id:ID!
-   firstName:String
-   lastName:String
-   password:String
-   collegeId:String
 }
 
 type Librarylist {
