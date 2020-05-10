@@ -1,0 +1,40 @@
+type Query {
+   greeting:String
+   
+   students:[Student]
+   studentById(id:ID!):Student 
+
+   librarylist:[Librarylist]
+   librarylistById(id:ID!):Librarylist
+
+   playlists:[Playlist]
+   playlistsById(id:ID!):Playlist
+
+   playlistsdeleteById(id: ID!): Playlist
+}
+
+type Student {
+   id:ID!
+   firstName:String
+   lastName:String
+   password:String
+   collegeId:String
+}
+
+type Librarylist {
+   id:ID!
+   album:String
+   duration:Int
+   title:String
+   artist:String
+}
+
+type Playlist {
+   id:ID!
+   name:String
+   songs:String
+}
+
+type Mutation {
+   createplaylist(id:String,name:String,songs:String):String
+}
